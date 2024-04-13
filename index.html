@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 5px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  font-size: 20px;
+  resize: none;
+}
+
+.button-container {
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow buttons to wrap to the next line */
+  gap: 20px; /* Gap between buttons */
+}
+
+.button {
+  font-size: 2em; /* Adjust font size */
+  color: lightblue;
+  text-align: center;
+  padding: 10px; /* Adjust padding */
+  border: none; /* Remove border */
+  background-color: transparent; /* Transparent background */
+  cursor: pointer;
+  outline: none; /* Remove outline */
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center items vertically */
+}
+
+.button img {
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: 5px; /* Add a small margin between the image and text */
+}
+
+.button:hover {
+  background-color: #f0f0f0; /* Light up background color on hover */
+}
+
+</style>
+</head>
+<body>
+   <form>
+      <textarea>                                                 Choose the right link at the bottom; there are 3 that are right and 2 that are wrong</textarea>
+   </form>
+   <div class="button-container">
+     <button class="button" onclick="window.location.href='button1.html'"><img src="lock.png" alt="Button 1"> https://www.youtube.com</button>
+     <button class="button" onclick="window.location.href='button2.html'"> http://hianime.to</button>
+     <button class="button" onclick="window.location.href='button3.html'"><img src="lock.png" alt="Button 3"> https://hianime.to</button>
+     <button class="button" onclick="window.location.href='button4.html'"><img src="lock.png" alt="Button 4"> https://www.facebook.com</button>
+     <button class="button" onclick="window.location.href='button5.html'"> http://www.facebook.com</button>
+   </div>
+</body>
+</html>
